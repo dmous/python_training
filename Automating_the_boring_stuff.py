@@ -25,6 +25,9 @@ myAge = input()
 print("You will be " + str(int(myAge) + 1) + " in a year!")
 
 # Comparison operators
+print(int(2.5) + 1)
+42 == 42.0
+42.0 == 0042.000
 49 == 47
 2 != 3
 "hello" == "world"
@@ -99,11 +102,24 @@ while True:
         break
 print("Access granted!")
 
-# THe for loop
+name = ''
+while not name:
+    print('Enter your name: ')
+    name = input()
+
+print('How many guests will you have?')
+num_of_guests = int(input())
+if num_of_guests:
+    print('Be sure to have enough room for all your guests')
+
+print('Done!')
+
+# The for loop along with the range() function
 print('My name is: ')
 for i in range(5):
     print('Jimmy Five Times (' + str(i) + ')')
 
+# In fact, you can use continue and break statements only inside while and for loops
 total = 0
 for num in range(101):
     total = total + num
@@ -130,7 +146,7 @@ while True:
         sys.exit()
     print('You typed ' + response + '!')
 
-
+# Functions
 # def statements
 def hello(name):
     print('Hello ' + name)
